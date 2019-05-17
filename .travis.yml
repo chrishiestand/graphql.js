@@ -30,15 +30,6 @@ jobs:
         - npm run coverage:upload
     - node_js: lts/*
       sudo: required
-      addons:
-        chrome: stable
-      env: browser tests
-      script:
-        - npm run test:browser
-    - node_js: lts/*
-      sudo: required
-      addons:
-        chrome: stable
       env: bundle size
       script:
         - npm run build
